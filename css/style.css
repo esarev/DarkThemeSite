@@ -13,14 +13,14 @@ body {
   background-color: #ff9295;
   transition: background-color 0.2s cubic-bezier(0, -1.85, .27, 1.75);
 }
-.toggle {
-  position: absolute;
+.theme {
+  position: fixed;
   top: 50%;
   left: 100px;
   /* padding: 0 200px; */
   transform: translate3d(-50%, -50%, 0);
 }
-.toogle:before {
+.toggle:before {
   content: 'OFF';
   position: absolute;
   left: -56px;
@@ -29,7 +29,7 @@ body {
   color: #fff;
 }
 
-.toogle:after {
+.toggle:after {
   content: 'ON';
   position: absolute;
   right: -46px;
@@ -74,8 +74,9 @@ input:checked+label:before {
   background-color: #fff;
 }
 .on {
-  /* background-color: #6fc57c; */
+  background-color: #6fc57c;
 }
+
 .toggle:before {
   color: rgba(62, 160, 81, 0.89);
 }
